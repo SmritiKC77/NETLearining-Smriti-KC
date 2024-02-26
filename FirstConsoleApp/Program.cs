@@ -10,4 +10,8 @@ m.Greet("Hi");
 var hightst = m.GetMax(3.2,5.6,7.8);
 Generics g = new();
 g.Display<string>("Smriti KC");
+Student Smriti = new Student(); // new keyword banauda constructor khojxa ; by defauult kunia pani class sanga constructor hunxa
+Student Iliya = new Student("Iliya Fathma",04);
 
+Smriti.RollNumber = 22; // Assigned
+Iliya.RollNumber = 222;  // not assigned
