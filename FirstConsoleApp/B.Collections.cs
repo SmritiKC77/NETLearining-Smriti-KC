@@ -5,7 +5,7 @@ class Coll
     {
         // One dimensional
         byte[] ages = [23,21,45,67,88,9];
-        string[] names =["Smriti","Iliya","2233"];
+        string[] names =["Sita","Rita","2233"];
         //Multi
         int [,] studentsinClassRoom = new int[7,6];
         studentsinClassRoom[0,0]=0;
