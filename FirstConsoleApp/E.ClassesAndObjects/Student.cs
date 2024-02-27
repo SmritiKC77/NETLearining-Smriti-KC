@@ -29,12 +29,15 @@ set
 }
     }
    // property ko intension nai outside of class access garna sakos
-    public string Address{get; set;} // auto implemented property
+    public string Address{get; set;} 
+    //means only read not write
+    public DateTime Dob{get;} // auto implemented property
     DateTime dob;
-    public void DisplayInfo()
+    public  virtual void DisplayInfo()
     {
         Console.WriteLine($"Student Name:{name}");
         Console.WriteLine($"Student Roll Number:{rollNumber}");
-        
+          Console.WriteLine($"Student DateOfBirth:{Dob}");
+            Console.WriteLine($"Address:{Address}");
     }
 }
