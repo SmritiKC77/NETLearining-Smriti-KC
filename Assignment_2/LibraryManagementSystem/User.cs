@@ -1,20 +1,17 @@
-// User.cs
 using System;
 
-public class User
+public class User : LibraryItem
 {
-    public string Name { get; set; }
     public int UserId { get; set; }
 
-    public User(string name, int userId)
+    public User(string name, int userId) : base(name, 0) // Using title for name, and year for UserId
     {
-        Name = name;
         UserId = userId;
     }
 
-    public void DisplayInfo()
+    public override void DisplayInfo()
     {
-        Console.WriteLine($"User Name: {Name}");
+        Console.WriteLine($"User Name: {Title}");
         Console.WriteLine($"User ID: {UserId}");
     }
 }

@@ -1,54 +1,31 @@
-// Library.cs
 using System;
 using System.Collections.Generic;
 
 public class Library
 {
-    private List<Book> books;
-    private List<User> users;
+    private List<LibraryItem> items;
 
     public Library()
     {
-        books = new List<Book>();
-        users = new List<User>();
+        items = new List<LibraryItem>();
     }
 
-    public void AddBook(Book book)
+    public void AddItem(LibraryItem item)
     {
-        books.Add(book);
+        items.Add(item);
     }
 
-    public void RemoveBook(Book book)
+    public void RemoveItem(LibraryItem item)
     {
-        books.Remove(book);
+        items.Remove(item);
     }
 
-    public void AddUser(User user)
+    public void DisplayItems()
     {
-        users.Add(user);
-    }
-
-    public void RemoveUser(User user)
-    {
-        users.Remove(user);
-    }
-
-    public void DisplayBooks()
-    {
-        Console.WriteLine("Books available in the library:");
-        foreach (var book in books)
+        Console.WriteLine("Items available in the library:");
+        foreach (var item in items)
         {
-            book.DisplayInfo();
-            Console.WriteLine();
-        }
-    }
-
-    public void DisplayUsers()
-    {
-        Console.WriteLine("Users registered in the library:");
-        foreach (var user in users)
-        {
-            user.DisplayInfo();
+            item.DisplayInfo();
             Console.WriteLine();
         }
     }

@@ -1,5 +1,4 @@
-﻿// Program.cs
-using System;
+﻿using System;
 
 class Program
 {
@@ -10,18 +9,16 @@ class Program
         // Adding books
         Book book1 = new Book("Hands on Machine Learning", "Geron Aurelien", 2017);
         Book book2 = new Book("Digital Logic", "Morris Mano", 1979);
-        library.AddBook(book1);
-        library.AddBook(book2);
+        library.AddItem(book1); // Use AddItem instead of AddBook
+        library.AddItem(book2); // Use AddItem instead of AddBook
 
         // Adding users
         User user1 = new User("Smriti KC", 1001);
         User user2 = new User("Iliya Fathma", 1002);
-        library.AddUser(user1);
-        library.AddUser(user2);
+        library.AddItem(user1); // Use AddItem instead of AddUser
+        library.AddItem(user2); // Use AddItem instead of AddUser
 
-        // Display books and users
-        library.DisplayBooks();
-        library.DisplayUsers();
+        // Display items (books and users)
+        library.DisplayItems(); // Use DisplayItems to display all items
     }
 }
-
