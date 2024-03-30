@@ -19,7 +19,7 @@ Thread.Sleep(1000); // 1 second sleep hunxa
 
 }
 // Sequntial
-public void ProcessNuumbers()
+public void ProcessNumbers()
 {
     Console.WriteLine("Sequential loop");
   foreach(var num in numbers)
